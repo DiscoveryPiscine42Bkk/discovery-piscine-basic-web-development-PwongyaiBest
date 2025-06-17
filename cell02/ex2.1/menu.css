@@ -1,36 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tab</title>
-    <style>
-        table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 30px auto;
-        }
-        td {
-            padding: 20px;
-            text-align: center;
-            font-size: 1.2em;
-            border: 1px solid black;
-        }
-        .box1 {
-            background-color: red;
-        }
-        .box2 {
-            background-color: blue;
-        }
-    </style>
-</head>
-<body>
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <table>
-        <tr>
-            <td class="box1">Hi blue</td>
-            <td class="box2">Hi Red</td>
-        </tr>
-    </table>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #e0ebff;
+  font-family: sans-serif;
+}
 
-</body>
-</html>
+  .dropdown {
+  position: relative;
+  width: 180px;
+  }
+
+  .dropdown > summary {
+  list-style: none; 
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 2px solid #2680eb;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  color: #1e3a8a;
+}
+.dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+  .dropdown > summary::after {
+  content: '▾';
+  font-size: 1em;
+  color: #2680eb;
+  transition: transform s ease;
+}
+
+  .dropdown[open] > summary::after {
+  transform: rotate(180deg);
+  }
+
+  .submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+  .dropdown[open] > .submenu {
+  display: block;
+  }
+
+  .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;  
+  border: 2px solid #2680eb;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  background: #fff;
+  }
+
+  .submenu li + li {
+  border-top: 1px solid #eee;
+  }
+
+  .submenu li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-size: 0.95rem;
+  font-family: sans-seri;
+  }
+
+  .submenu li a:hover {
+  background: #f0f4ff;}
