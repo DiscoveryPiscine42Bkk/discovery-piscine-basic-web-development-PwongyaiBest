@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Peerapat Wongyai | คณะครุศาสตร์อุตสาหกรรมบัณฑิต สาขาสถาปัตยกรรม - Portfolio and Contact Info" />
   <title>PEERAPAT WONGYAI</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -48,16 +47,17 @@
     }
     .main-image {
       width: 40%;
-      background: #9d070e;
+      background: linear-gradient(to bottom, #900f16, #c1121f);
       max-height: 90%;
+      width: auto;
+      object-fit: contain;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: 0 0 30px rgba(0,0,0,0.3);
-    }
+      }
     .main-image img {
-      max-height: 70%;
-      max-width: 70%;
+      max-height: 90%;
       object-fit: contain;
     }
     .description {
@@ -90,24 +90,6 @@
     a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 768px) {
-      .content {
-        flex-direction: column;
-        overflow-y: auto;
-      }
-      .sidebar, .main-image, .description {
-        width: 100%;
-        padding: 1.5rem;
-        text-align: center;
-      }
-      .main-image {
-        justify-content: center;
-      }
-      .main-image img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
   </style>
 </head>
 <body>
@@ -139,9 +121,9 @@
         <h3>Email</h3>
         <p><a href="mailto:Peerapatwongyaai1@gmail.com">Peerapatwongyaai1@gmail.com</a></p>
         <h3>Facebook</h3>
-        <p><a href="https://www.facebook.com/gogo.pee.5" target="_blank" rel="noopener noreferrer">Peerapat Wongyai</a></p>
+        <p><a href="https://www.facebook.com/gogo.pee.5" target="_blank">Peerapat Wongyai</a></p>
         <h3>Instagram</h3>
-        <p><a href="https://www.instagram.com/best_tt__" target="_blank" rel="noopener noreferrer">@best_tt__</a></p>
+        <p><a href="https://www.instagram.com/best_tt__" target="_blank">@best_tt__</a></p>
       </div>
     </div>
   </div>
