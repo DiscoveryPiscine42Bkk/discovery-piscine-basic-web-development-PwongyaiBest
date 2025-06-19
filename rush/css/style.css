@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* 1. ตั้งพื้นหลังเป็น GIF แบบ cover */
+body {
+  background: url("https://i.pinimg.com/originals/8a/6d/3d/8a6d3d749c0f380665264a4a04f3d29c.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  
+  /* 2. เปลี่ยนฟอนต์และสีฟอนต์เป็นสีขาว */
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+/* 3. .hero ต้องอยู่ข้างนอก ไม่ใช่ซ้อนใน body */
+.hero {
+  background: url('https://cdn.discordapp.com/attachments/956936400450764840/1384825593123836096/Asset_2.png')
+    center/cover no-repeat;
+  position: relative;
+  height: 60vh;
+}
+
+/* 4. main-title ก็เช่นกัน */
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative; /* ใส่ไว้ถ้าจะใช้ overlay */
+}
+
+/* 5. navbar และ backdrop blur */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/* 6. content ทั้งหมดให้มาอยู่เหนือ overlay */
+body > * {
+  position: relative;
+  z-index: 1;
+}
