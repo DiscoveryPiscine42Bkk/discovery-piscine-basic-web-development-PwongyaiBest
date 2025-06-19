@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หน้าหลัก</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background: url('https://i.pinimg.com/originals/8a/6d/3d/8a6d3d749c0f380665264a4a04f3d29c.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 2rem;
+      background-color: rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0;
+      text-align: left;
+      max-width: 800px;
+      margin-left: 0;
+    }
+    .nav-boxes {
+      display: flex;
+      justify-content: flex-start;
+      gap: 2rem;
+      margin: 2rem;
+      flex-wrap: wrap;
+    }
+    .nav-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #111;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      width: fit-content;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+    .nav-box:hover {
+      background-color: #ffc107;
+      color: black;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align:center">WELCOME TO OUR RUSH PROJECT</h1>
+    <p style="text-align:left; margin-left: 2rem;">นี้คือเว็บไซต์นำเสนอโปรเจกต์ของเรา<br>คลิกที่ปุ่มด้านล่างเพื่อดูประวัติและผลงานแต่ละคน</p>
+  </header>
+
+  <main>
+    <div class="nav-boxes">
+      <a class="nav-box" href="member1.html">Best</a>
+      <a class="nav-box" href="member2.html">May</a>
+    </div>
+  </main>
+</body>
+</html>
+
+ <!-- Footer -->
+<footer class="bg-transparent text-light pt-5">
+  <div class="container">
+    <div class="row align-items-start gy-4">
+
+      <!-- Col1: Logo + School Info -->
+      <div class="col-12 col-md-4">
+        <img src="https://cdn.discordapp.com/attachments/956936400450764840/1384870695217004735/Asset_5.png?ex=685400d7&is=6852af57&hm=849724034396d82994ff9560fa653ae72a2811869a163ce3cf2625862d85e5b0&"
+             alt="SIET | KMITL"
+             style="max-width:180px;"
+             class="mb-2">
+        <p class="small mb-1">
+          คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>
+          SCHOOL OF INDUSTRIAL EDUCATION AND TECHNOLOGY
+        </p>
+      </div>
+
+      <!-- Col2: ติดต่อคณะ -->
+      <div class="col-12 col-md-4">
+        <h6 class="text-warning fw-bold">ติดต่อคณะ:</h6>
+        <ul class="list-unstyled mt-2">
+          <li class="mb-2">
+            <i class="bi bi-facebook me-2"></i>
+            <a href="https://www.facebook.com/siet.kmitl"
+               target="_blank"
+               class="text-light text-decoration-none">
+              facebook.com/siet.kmitl
+            </a>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:023298435"
+               class="text-light text-decoration-none">
+              0 2329 8435
+            </a>
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:saraban_siet@kmitl.ac.th"
+               class="text-light text-decoration-none">
+              saraban_siet@kmitl.ac.th
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col3: รู้จักเรา -->
+      <div class="col-12 col-md-4">
+        <h6 class="text-warning fw-bold">รู้จักเรา</h6>
+        <ul class="list-unstyled mt-2">
+          <li><a href="#" class="text-light text-decoration-none">ประวัติความเป็นมา</a></li>
+          <li><a href="#" class="text-light text-decoration-none">โครงสร้างองค์กร</a></li>
+          <li><a href="#" class="text-light text-decoration-none">ทิศทางการบริหาร</a></li>
+          <li><a href="#" class="text-light text-decoration-none">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /.row -->

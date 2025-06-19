@@ -15,8 +15,7 @@
       font-family: 'Noto Sans', sans-serif;
       background: #fff;
       color: #1b1b1b;
-      height: 100vh;
-      overflow: hidden;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
@@ -42,7 +41,7 @@
       color: #666;
     }
     .sidebar a {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
     }
     .main-image {
@@ -59,17 +58,16 @@
     }
     .description {
       width: 30%;
-      padding: 5rem 2rem 5rem;
+      padding: 7rem 2rem 7rem;
       background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
     }
     .description h2 {
       font-size: 1rem;
       color: #666;
       letter-spacing: 2px;
-      margin-top: 2rem;
     }
     .description h3 {
       font-size: 1.3rem;
@@ -87,18 +85,51 @@
     a:hover {
       text-decoration: underline;
     }
+    footer {
+      background-color: #0e1019;
+      color: #fff;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    footer h4 {
+      color: #ffc107;
+      margin-bottom: 0.5rem;
+    }
+    footer .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    footer .column {
+      flex: 1 1 200px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
+  <header style="padding: 0.3rem 2rem; display: flex; justify-content: center; gap: 2rem; font-size: 0.75rem; font-weight: bold;">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="member2.html">สมาชิก B</a>
+  </header>
   <div class="content">
     <div class="sidebar">
       <div>
         <h1>PEERAPAT<br />WONGYAI</h1>
         <p>คณะครุศาสตร์อุตสาหกรรมบัณฑิต · สาขาวิชาสถาปัตยกรรม</p>
-      </div>
-      <div>
-        <p><a href="index.html">หน้าหลัก</a></p>
-        <p><a href="member2.html">สมาชิก B</a></p>
       </div>
     </div>
 
@@ -124,5 +155,50 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <div class="footer-columns">
+      <div class="column">
+        <img src="https://cdn.discordapp.com/attachments/956936400450764840/1384870695217004735/Asset_5.png" alt="SIET Logo" style="max-width: 150px;">
+        <p class="mt-2">คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>SCHOOL OF INDUSTRIAL EDUCATION AND TECHNOLOGY</p>
+        <p>facebook.com/siet.kmitl</p>
+        <p>0 2329 8435</p>
+        <p>saraban_siet@kmitl.ac.th</p>
+      </div>
+      <div class="column">
+        <h4>รู้จักเรา</h4>
+        <p>ประวัติความเป็นมา</p>
+        <p>โครงสร้างองค์กร</p>
+        <p>ทิศทางการบริหาร</p>
+        <p>ติดต่อเรา</p>
+      </div>
+      <div class="column">
+        <h4>ข่าวสาร</h4>
+        <p>ข่าวประชาสัมพันธ์</p>
+        <p>ข่าวประกาศ</p>
+        <p>รางวัล/ผลงาน</p>
+        <p>กิจกรรม</p>
+        <p>ข่าวจัดซื้อจัดจ้าง</p>
+      </div>
+      <div class="column">
+        <h4>คลังสื่อ</h4>
+        <p>วิดิทัศน์</p>
+        <p>สื่อสิ่งพิมพ์</p>
+        <p>อัลบั้มภาพ</p>
+        <p>เอกสารการประชุมวิชาการ</p>
+        <p>DRLE</p>
+      </div>
+      <div class="column">
+        <h4>เอกสาร/แบบฟอร์ม</h4>
+        <p>เอกสารและแบบฟอร์มต่างๆ</p>
+        <p>การจัดการกลยุทธ์คณะครุศาสตร์</p>
+        <p>การใช้ทรัพย์สินของราชการ</p>
+        <p>การส่งเสริมความโปร่งใสในหน่วยงาน</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright © School of Industrial Education and Technology. All Rights Reserved.
+    </div>
+  </footer>
 </body>
 </html>
