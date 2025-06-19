@@ -42,7 +42,7 @@
       color: #666;
     }
     .sidebar a {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: bold;
     }
     .main-image {
@@ -59,16 +59,17 @@
     }
     .description {
       width: 30%;
-      padding: 7rem 2rem 7rem;
+      padding: 5rem 2rem 5rem;
       background: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
     }
     .description h2 {
       font-size: 1rem;
       color: #666;
       letter-spacing: 2px;
+      margin-top: 2rem;
     }
     .description h3 {
       font-size: 1.3rem;
@@ -89,15 +90,15 @@
   </style>
 </head>
 <body>
-  <header style="padding: 0.5rem 2rem; display: flex; justify-content: center; gap: 2rem; font-size: 0.8rem; font-weight: bold;">
-    <a href="index.html">หน้าหลัก</a>
-    <a href="member2.html">สมาชิก B</a>
-  </header>
   <div class="content">
     <div class="sidebar">
       <div>
         <h1>PEERAPAT<br />WONGYAI</h1>
         <p>คณะครุศาสตร์อุตสาหกรรมบัณฑิต · สาขาวิชาสถาปัตยกรรม</p>
+      </div>
+      <div>
+        <p><a href="index.html">หน้าหลัก</a></p>
+        <p><a href="member2.html">สมาชิก B</a></p>
       </div>
     </div>
 
@@ -123,6 +124,5 @@
       </div>
     </div>
   </div>
-  
 </body>
 </html>

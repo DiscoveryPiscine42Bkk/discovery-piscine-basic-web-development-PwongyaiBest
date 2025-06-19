@@ -1,0 +1,140 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .left-panel, .right-panel {
+    padding: 1.5rem;
+  }
+  .center-panel {
+    height: 60vh;
+  }
+}
+
+.left-panel {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* เปลี่ยนจากแนวนอนเป็นแนวตั้ง */
+  gap: 1.25rem; /* ระยะห่างระหว่างรายการเมนู */
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.title-box {
+  margin-top: 3rem;
+}
+
+.title-box h1 {
+  font-size: 2.75rem;
+  line-height: 1.1;
+}
+
+.title-box p {
+  color: var(--clr-muted);
+  margin-top: 0.5rem;
+}
+
+.center-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.center-panel::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 50%; transform: translateX(-50%); /* ให้อยู่กลางแบบแม่นยำ */
+  background: linear-gradient(to bottom, var(--clr-accent-dark), var(--clr-accent));
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 1;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.right-panel {
+  padding: 4rem 3rem 2rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.right-panel section + section {
+  margin-top: 2.5rem;
+}
+
+.right-panel h3 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--clr-muted);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.right-panel h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+  color: #ffc107;   /* ส้มอ่อนเวลาลากเมาส์ */
+}
+.custom-footer {
+  background-color: #1A182B;  /* ใส่โค้ดสีที่ต้องการ */
+}
+footer h6 {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 767px) {
+  footer .row > [class*="col-"] {
+    text-align: center; /* จัดกึ่งกลางในมือถือ */
+  }
+
+}
