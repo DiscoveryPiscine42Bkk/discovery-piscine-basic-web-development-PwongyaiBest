@@ -1,0 +1,80 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background: #fff;
+      color: #1b1b1b;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+      flex: 1;
+    }
+    .sidebar {
+      width: 30%;
+      padding: 2rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sidebar h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 2rem;
+    }
+    .sidebar p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .sidebar a {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .main-image {
+      position: relative;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #900f16, #c1121f);
+    }
+    .main-image img {
+      max-height: 90%;
+      object-fit: contain;
+    }
+    .description {
+      width: 30%;
+      padding: 7rem 2rem 7rem;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .description h2 {
+      font-size: 1rem;
+      color: #666;
+      letter-spacing: 2px;
+    }
+    .description h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .description p {
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    a {
+      color: #1b1b1b;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }

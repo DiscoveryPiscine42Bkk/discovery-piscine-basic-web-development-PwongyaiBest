@@ -5,88 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PEERAPAT WONGYAI</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Noto Sans', sans-serif;
-      background: #fff;
-      color: #1b1b1b;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .content {
-      display: flex;
-      flex: 1;
-    }
-    .sidebar {
-      width: 30%;
-      padding: 2rem;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .sidebar h1 {
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 2rem;
-    }
-    .sidebar p {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .sidebar a {
-      font-size: 1rem;
-      font-weight: bold;
-    }
-    .main-image {
-      position: relative;
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(to bottom, #900f16, #c1121f);
-    }
-    .main-image img {
-      max-height: 90%;
-      object-fit: contain;
-    }
-    .description {
-      width: 30%;
-      padding: 7rem 2rem 7rem;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .description h2 {
-      font-size: 1rem;
-      color: #666;
-      letter-spacing: 2px;
-    }
-    .description h3 {
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-    }
-    .description p {
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-    a {
-      color: #1b1b1b;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/1style.css">
+  
+
 </head>
 <body>
   <header style="padding: 0.5rem 2rem; display: flex; justify-content: center; gap: 2rem; font-size: 0.8rem; font-weight: bold;">
@@ -102,7 +26,7 @@
     </div>
 
     <div class="main-image">
-      <img src="https://media.discordapp.net/attachments/1384790264496918582/1385107514093342740/S__9142285.jpg" alt="Peerapat Wongyai" />
+      <img src="https://i.pinimg.com/736x/4d/3f/c2/4d3fc2cd6575d58619c53b3539f95087.jpg" alt="Peerapat Wongyai" />
     </div>
 
     <div class="description">
@@ -123,6 +47,71 @@
       </div>
     </div>
   </div>
-  
-</body>
-</html>
+
+  <footer class="custom-footer text-light pt-5">
+  <div class="container">
+    <div class="row align-items-start gy-4">
+
+      <!-- Col1: Logo + School Info -->
+      <div class="col-12 col-md-4">
+        <img src="https://cdn.discordapp.com/attachments/956936400450764840/1384870695217004735/Asset_5.png?ex=685400d7&is=6852af57&hm=849724034396d82994ff9560fa653ae72a2811869a163ce3cf2625862d85e5b0&"
+             alt="SIET | KMITL"
+             style="max-width:180px;"
+             class="mb-2">
+        <p class="small mb-1">
+          คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>
+          SCHOOL OF INDUSTRIAL EDUCATION AND TECHNOLOGY
+        </p>
+      </div>
+
+      <!-- Col2: ติดต่อคณะ -->
+      <div class="col-12 col-md-4">
+        <h6 class="text-warning fw-bold">ติดต่อคณะ:</h6>
+        <ul class="list-unstyled mt-2">
+          <li class="mb-2">
+            <i class="bi bi-facebook me-2"></i>
+            <a href="https://www.facebook.com/siet.kmitl"
+               target="_blank"
+               class="text-light text-decoration-none">
+              facebook.com/siet.kmitl
+            </a>
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:023298435"
+               class="text-light text-decoration-none">
+              0 2329 8435
+            </a>
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:saraban_siet@kmitl.ac.th"
+               class="text-light text-decoration-none">
+              saraban_siet@kmitl.ac.th
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col3: รู้จักเรา -->
+      <div class="col-12 col-md-4">
+        <h6 class="text-warning fw-bold">รู้จักเรา</h6>
+        <ul class="list-unstyled mt-2">
+          <li><a href="#" class="text-light text-decoration-none">ประวัติความเป็นมา</a></li>
+          <li><a href="#" class="text-light text-decoration-none">โครงสร้างองค์กร</a></li>
+          <li><a href="#" class="text-light text-decoration-none">ทิศทางการบริหาร</a></li>
+          <li><a href="#" class="text-light text-decoration-none">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /.row -->
+
+    <hr class="border-secondary my-4">
+
+    <div class="text-center small pb-3">
+      &copy; School of Industrial Education and Technology. All Rights Reserved.
+    </div>
+  </div><!-- /.container -->
+</footer>
+</body>                                                                                                                                                                                                                                               
+</html>  
