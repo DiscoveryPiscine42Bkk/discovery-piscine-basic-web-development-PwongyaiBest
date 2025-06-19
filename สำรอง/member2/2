@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NATAMON WITTAYAPOOM</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background: #fff7e6;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem;
+    }
+    .photo {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .photo img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .info {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #4b2e2e;
+      text-align: left;
+    }
+    .info h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .info p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+      gap: 1rem;
+      background: #f4c4d7;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      width: fit-content;
+    }
+    .links a {
+      background: transparent;
+      border-radius: 12px;
+      padding: 0.6rem 1.2rem;
+      box-shadow: 0 0 0 2px #4b2e2e inset;
+      border: 2px solid #4b2e2e;
+      color: #4b2e2e;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+    .links a:hover {
+      background: #4b2e2e;
+      color: #fff7e6;
+    }
+    .footer-name {
+      background: #f4c4d7;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #4b2e2e;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .info {
+        padding: 1rem;
+        text-align: center;
+      }
+      .links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="footer-name">
+    NATAMON<br />WITTAYAPOOM
+  </div>
+  
+  <div class="container">
+    <div class="photo" style="position: relative; display: flex; justify-content: center;">
+      <img src="https://media.discordapp.net/attachments/1384790264496918582/1385302913819218082/S__3112988.jpg?ex=68559360&is=685441e0&hm=0fa978fb79af73eaa9a632f1ce69fe3d8ee59bbbc78e0600af37442caa560478&=&format=webp&width=1096&height=823" alt="NATAMON WITTAYAPOOM">
+    
+</div>
+<div class="info">
+      <h1>ณฐมน วิทยาภูมิ</h1>
+      <p><strong>ช่องทางติดต่อ</strong></p>
+      <p>Email: <a href="mailto:changmaym@gmail.com">changmaym@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/natamon.wittayapoom" target="_blank" rel="noopener noreferrer">natamon wittayapoom</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/natamon_wittayapoom?utm_source=ig_web_button_share_sheet&igsh=MWM2NW90enE1eWp0Mg%3D%3D" target="_blank" rel="noopener noreferrer">natamon_wittayapoom</a></p>
+      <p>X: <a href="https://x.com/mydodear" target="_blank" rel="noopener noreferrer">@mydodear</a></p>
+    </div>
+  </div>
+  <div class="links">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="member1.html">Best</a>
+  </div>
+  
+</body>
+</html>
