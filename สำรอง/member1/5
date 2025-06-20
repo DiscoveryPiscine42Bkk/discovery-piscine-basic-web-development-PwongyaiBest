@@ -118,7 +118,7 @@
     </div>
   </main>
 
-  
+  <!-- เว้นไว้ตรงนี้ให้ขยายเนื้อหาภายหลัง -->
   <section>
     <div class="container">
       <div class="row align-items-start">
@@ -183,5 +183,6 @@
       Copyright © School of Industrial Education and Technology. All Rights Reserved.
     </div>
   </footer>
+
 </body>
 </html>
